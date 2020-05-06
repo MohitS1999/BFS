@@ -18,6 +18,7 @@ public class BFS{
 		}
 		bfs(a,sc.nextInt(),n);
 	}
+	//BFS
 	public static void bfs(int a[][],int i,int n){
 		Queue q=new Queue();
 		int visited[]=new int[n+1];
@@ -36,9 +37,11 @@ public class BFS{
 		}
 	}
 }
+//Queue
 class Queue{
 	Node front;
 	Node rear;
+	//Insert the Element in Queue
 	public void enqueue(int data){
 		Node node=new Node();
 		node.data=data;
@@ -53,6 +56,7 @@ class Queue{
 			rear=node;
 		}
 	}
+	//Delete the element from the queue
 	public int dequeue(){
 		int x=-1;
 		if(front==null)
